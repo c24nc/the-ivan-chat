@@ -2,7 +2,7 @@ function processForm(e){
     e.preventDefault();
     console.log(e);
 
-const tweet = document.getElementById('tweet');
+const chat = document.getElementById('chat');
 const ul = document.getElementById('timeline');
 const li = document.createElement('li');
 
@@ -14,7 +14,7 @@ let cYear = currentDate.getFullYear()
 let time =    " " + cMonth + "/" + cDay + "/"+ cYear
 let time1 = ", " + currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();
 
-if (tweet.value.length===0){
+if (chat.value.length===0){
      return false;
     }
 let span = document.createElement('span');
@@ -48,15 +48,18 @@ function checkBox(){
 }
 
 
+var textDiv = document.createElement('div');
+textDiv.innerText = chat.value
+textDiv.classList.add("chat-text")
 
 
 li.appendChild(favorite)
-li.appendChild(document.createTextNode(tweet.value))
+li.appendChild(textDiv)
 li.appendChild(span);
 li.appendChild(span2);
 ul.appendChild(li);
 
-tweet.value = null
+chat.value = null
 return false;
 
 
@@ -64,5 +67,5 @@ return false;
 
 
 }
-const form = document.getElementById("send-tweet");
+const form = document.getElementById("send-chat");
 form.addEventListener("submit", processForm);
