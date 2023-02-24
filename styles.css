@@ -1,0 +1,87 @@
+body{
+
+}
+
+.favorite{
+    height: 50px;
+    width: 33px;
+    display:flex;
+    background-image: url(greystar.png);
+    background-size: cover;
+
+}
+
+.time{
+    display: flex;
+    color:rgb(93, 202, 250);
+    font-size: 20px;
+    justify-content: left;
+    align-self: start;
+
+}
+
+.user{
+    color: grey;
+    font-size: 20px;
+
+}
+#button{
+    background-color: rgb(93, 202, 250);
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    color: white;
+
+
+}
+#go{
+    background-color: rgb(93, 202, 250);
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    color: white;
+
+
+}
+#button:hover{
+    background-color:rgb(66, 138, 211);
+}
+
+#user2{
+    
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+
+}
+
+
+#label{
+    
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+
+}
+#tweet{
+    
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    
+
+
+}
+
+#logo{
+    background-image: url(logo.png);
+    height: 100px;
+    width: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+}
+#timeline{
+    font-size: 40px;
+
+    font-family: 'Nunito', sans-serif;
+ 
+
+}
+
